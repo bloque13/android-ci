@@ -1,0 +1,23 @@
+start_test_server_in_background
+exit
+start_test_server_in_background
+exit
+query("*")
+start_test_server_in_background
+query("*")
+tap("add_app")
+exit
+start_test_server_in_background
+touch(query("* id:'add_app'"))
+touch("* id:'add_app'")
+touch("* id:'add_app'")
+exit
+exit
+start_test_server_in_background
+query("*")
+query("android.widget.EditText *")
+exit
+start_test_server_in_background
+exit
+start_test_server_in_background
+exit

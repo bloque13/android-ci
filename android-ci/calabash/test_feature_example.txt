@@ -1,0 +1,19 @@
+Feature: Use AppCreator - Register
+
+Scenario: Register
+	Then I enter text "user name" into field with id "eTxtUser"
+	Then I enter text "password" into field with id "eTxtPassword"
+	Then I press view with id "etxtLogon"
+	Then I take a screenshot
+	Then I press the "Register" button
+	Then I take a screenshot
+	Then I should see "Registering"
+	Then I take a screenshot
+	Then I press the "OK" button
+	Then I wait for dialog to close
+	Then I take a screenshot
+	Then I should see "Refresh"
+	Then I press the "Refresh" button
+	Then I should see "Please wait"
+	Then I take a screenshot
+	Then I wait for progress

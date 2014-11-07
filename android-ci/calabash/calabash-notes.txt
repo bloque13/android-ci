@@ -1,0 +1,37 @@
+/***********/
+INTRO
+
+Add '!' on the feature file extension to exclude them from running. 
+Remove the '!' from the file extension to run test.
+
+/************/
+TO RUN TESTS
+- browse to the AppCreator-calabash folder and run run.bat in cmd
+
+/************/
+REPORT
+- to view report, open the report.html file in the AppCreator-calabash folder
+
+MISC----
+// queries
+
+// query a view by id
+query("* id:'OBJECT_ID'")
+
+// query by text value
+query("* text:'TEXT_VALUE'")
+
+// touch a view by id
+touch(query("* id:'OBJECT_ID'"))
+
+// touch by text value
+touch(query("* text:'TEXT_VALUE'"))
+
+// enter text in to a EditText
+//performAction('enter_text_into_id_field', 'TEXT_VALUE', 'txtUsername') - OLD
+enter_text("android.widget.EditText id:'ID_FIELD'", "TEXT_VALUE")
+eg.
+enter_text("android.widget.EditText id:'txtUsername'", "test")
+ 
+// clear text from an Edit Text
+clear_text("android.widget.EditText id:'txtUsername'")
